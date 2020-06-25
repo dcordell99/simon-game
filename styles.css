@@ -1,0 +1,137 @@
+body {
+	font-family: 'Press Start 2P', cursive;
+	margin-top: 5rem;
+	text-align: center;
+	background-color: #011f3f;
+	box-sizing: border-box;
+}
+
+#level-title {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 2rem;
+	margin: 5%;
+	color: #fef2bf;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: 7rem;
+	margin-bottom: 10px;
+}
+
+.btn {
+	display: flex;
+	height: 150px;
+	width: 150px;
+	border: 7px solid black;
+	margin: 15px 7.5px;
+	z-index: -1;
+}
+
+.game-over {
+	background-color: red;
+	opacity: 0.8;
+	z-index: 100;
+}
+
+.red {
+	background-color: red;
+	border-bottom-left-radius: 100%;
+}
+
+.color-hover-red {
+	border: 7px solid red;
+}
+
+.green {
+	background-color: green;
+	border-top-left-radius: 100%;
+}
+
+.color-hover-green {
+	border: 7px solid green;
+}
+
+.blue {
+	background-color: blue;
+	border-bottom-right-radius: 100%;
+}
+
+.color-hover-blue {
+	border: 7px solid blue;
+}
+
+.yellow {
+	background-color: yellow;
+	border-top-right-radius: 100%;
+}
+
+.color-hover-yellow {
+	border: 7px solid yellow;
+}
+
+.pressed {
+	box-shadow: 0 0 20px white;
+	background-color: grey;
+	opacity: 0.5;
+}
+
+.pressed:hover {
+	border: 7px solid rgba(255, 255, 255, 0);
+}
+
+.center {
+	position: absolute;
+	height: 140px;
+	width: 140px;
+	border: 15px solid black;
+	border-radius: 50%;
+	background-image: linear-gradient(to bottom right, grey, white);
+	z-index: 99;
+	margin-top: 6.5rem;
+	cursor: pointer;
+}
+
+.black-background {
+	position: absolute;
+	background-color: black;
+	width: 380px;
+	height: 380px;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+/* .start-overlay {
+	position: absolute;
+	background: rgba(255, 255, 255, 0);
+	width: 380px;
+	height: 380px;
+	border-radius: 50%;
+	z-index: 100;
+	visibility: hidden;
+} */
+
+.simon-text {
+	font-family: 'Press Start 2P', cursive;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 2.7rem 0 1rem 0;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+}
+
+simon-text:hover {
+	color: white;
+	transition: 500ms;
+}
+
+.start {
+	font-family: initial;
+	font-size: 0.8rem;
+}
+
+.current-level {
+	font-size: 1.4rem;
+}
